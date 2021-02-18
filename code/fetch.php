@@ -3,7 +3,7 @@
 
 /*secret file container*/
   require_once __DIR__.'/../vendor/autoload.php';
-  $dotenv=Dotenv\Dotenv::createImmutable(dirname(__DIR__).'/');
+  $dotenv=Dotenv\Dotenv::createImmutable(dirname(__DIR__).'/'); //also this is a security feature kinda i guess
   $dotenv->load();
   /*load decryption key*/
   //$keycontents=file_get_contents('/usr/local/key');

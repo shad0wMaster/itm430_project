@@ -1,5 +1,9 @@
+//This code is all Robert. Next time tell me its an Array Lol.
+//I will attempt to code this in rust for fun but it wont run because the beacon is Dead.
+//But the rust code can run faster if sending requests from multiple network connection its all
+//Wont run until button pressed 
 io.press(() => {
-        io.setLedColor("#FF77EB")
+        io.setLedColor("#FF77EB") 
         io.led(1, true);
 
         location.startUpdates((position) => {
