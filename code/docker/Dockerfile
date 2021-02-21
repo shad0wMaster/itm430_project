@@ -2,6 +2,3 @@
 FROM fedora:latest
 RUN yum -y update 
 RUN yum -y install httpd php
-
-#Install mysql
-FROM mysql:latest
