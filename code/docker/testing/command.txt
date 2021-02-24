@@ -1,0 +1,32 @@
+Version 0.1: Created bullshit
+
+SO in order to do Docker Bullshit you must do these commads in order or you will go through hell.
+
+Step 1: sudo docker build -t fugg1 . VERIFIED WORKS @thekillerflame @shad0wMaster
+Notes: Build it and name the image using the Dockerfile. Make sure you are in the same directory or specify it.
+
+Step 2: sudo docker run -d -p 1234:80 fugg1 VERIFIED WORKS @thekillerflame @shad0wMaster
+Notes: Run this and specify opening the Port 80 for the Apache Web Server
+Notes: 1234 is the local port that will open on the local device. It means it whatever you are running this it will open the port on the PC for you. 
+Notes: 1234:80 will be mapped to the fugg1 container.
+
+Step 3: sudo docker ps -a VERIFIED WORKS @thekillerflame @shad0wMaster
+Notes: Grab the wierd ass name it is important for science and for the thing. 
+Example: jolly_blakburn, sun_dale, its wierd you won't miss it.
+
+OPTIONAL: IF you do not want to do the echo command in step 5 run this on the local machine. 
+docker cp index.html <wierd name>:/var/www/html/index.html  VERIFIED WORKS @thekillerflame @shad0wMaster
+IF YOU WANT YOU DON'T NEED TO SPECIFY THE FILE NAME AT THE END.
+
+Step 4: sudo docker exec -it <wierd name> /bin/bash
+Notes: DON'T SKIP THIS STEP. LOG INTO THE FUCKER AND MAKE SURE IT IS WORKING.
+
+Optional Step 5: echo "<h1>FUGG THE WORLD</h1>" > index.html VERIFIED WORKS @thekillerflame @shad0wMaster
+
+Step 5: CONGRATS YOU HAVE A RUNNING APACHE PHP WEB Server
+
+Optional: Step 6: sudo docker kill <wierd name> VERIFIED WORKS @thekillerflame @shad0wMaster
+Notes: Kill the box.
+
+Optional Step 7: sudo docker system prune -a and type y and click enter VERIFIED WORKS @thekillerflame @shad0wMaster
+Notes: This kills everything.
